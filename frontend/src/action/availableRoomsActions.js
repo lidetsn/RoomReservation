@@ -1,4 +1,3 @@
-//import avrooms from "../data/data"
 import axios from "axios"
 
 
@@ -22,21 +21,7 @@ export const getAllAvailablerooms= ()=>async (dispatch)=>{
 export const getAllfeaturedRooms=()=>async (dispatch)=>{
          try {
           const {data}=await axios.get("/api/rooms/featuredrooms")
-     //     console.log(data)
-              // let featuredRooms = avrooms.filter(room => room.featured === true);
-               //
-                //  let maxPrice = Math.max(...rooms.map(item => item.price));
-                //  let maxSize = Math.max(...rooms.map(item => item.size));
-                //  this.setState({
-                //    rooms,
-                //    featuredRooms,
-                //    sortedRooms: rooms,
-                //    loading: false,
-                //    //
-                //    price: maxPrice,
-                //    maxPrice,
-                //    maxSize
-                //  });
+  
        
           dispatch({
               type:"FEATURE_ROOMS_SUCCESS",
@@ -54,8 +39,7 @@ export const getRoomDetail=(slug)=>async (dispatch)=>
 {
                try {
                  const {data}=await axios.get(`/api/rooms/${slug}`)
-                //  let tempRooms = [...avrooms];
-                //   const room = tempRooms.find(room => room.slug === slug);
+               
                   dispatch({
                       type: "ROOM_DETAIL_SUCCESS",
                       payload:data

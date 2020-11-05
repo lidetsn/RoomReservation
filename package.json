@@ -1,0 +1,23 @@
+{
+  "name": "addisresortfullstack",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "",
+  "main": "backEnd/server.js",
+  "scripts": {
+    "start": "node backEnd/server.js",
+    "server": "node backEnd/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seeder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.10"
+  }
+}

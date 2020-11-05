@@ -17,13 +17,7 @@ const RoomsFilter = () =>
                                                               maxSize:0,
                                                               breakfast:true,
                                                               pets:true})
-                        // const [type, setType] = useState("")
-                        // const [capacity, setCapacity] = useState(0)
-                        // const [price, setPrice] = useState(0)
-                        // const [minSize, setMinSize] = useState(0)
-                        // const [maxSize, setMaxSize] = useState(0)
-                        // const [breakfast, setBreakfast] = useState("")
-                        // const [pets, setPets] = useState(true)
+                       
                         const dispatch=useDispatch()
                         const availableRooms = useSelector(state => state.availableRooms)
                         const {rooms}=availableRooms

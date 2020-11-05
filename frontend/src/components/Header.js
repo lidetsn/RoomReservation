@@ -2,8 +2,6 @@ import React, { Component } from "react";
 // import { Link} from "react-router-dom";
 import {LinkContainer} from "react-router-bootstrap"// this does the same aas Link but rap the nave bar
 import {Container,Navbar,Nav} from "react-bootstrap"
-// import { FaAlignRight } from "react-icons/fa";
-// import logo from "../images/logo.png";
 
 
 export default class Header extends Component {

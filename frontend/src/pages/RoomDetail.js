@@ -6,10 +6,9 @@ import {getRoomDetail} from "../action/availableRoomsActions"
 import Banner from "../components/Banner";
 import { Link } from "react-router-dom";
 import {Row,Col,ListGroup,Card,Button} from  "react-bootstrap"
-// import StyledHero from "../components/StyledHero";
+
 import {DetailHeader}from "../components/UpperStyle";
-// import defaultBcg from "../images/room-1.jpeg";
-// import Hero from "../components/Hero";
+
 
 
 const RoomDetail=({match,history})=> { 
@@ -23,11 +22,7 @@ const RoomDetail=({match,history})=> {
 useEffect(() => {
        dispatch(getRoomDetail(sl))
 }, [dispatch,sl])
-// console.log("=====================")
-// console.log(room)
 
-    //const [...defaultImages] = room.images;
-    // console.log(defaultImages);
     const handleBooking=()=>{
             history.push(`/book/${sl}`)
     }

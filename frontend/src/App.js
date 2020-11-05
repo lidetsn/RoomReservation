@@ -12,13 +12,14 @@ import Error from "./pages/Error";
 import Footer from "./components/Footer"
 import Header from "./components/Header";
 
-import { Switch, Route } from "react-router-dom";
+import {BrowserRouter as Router, Route,Switch}  from "react-router-dom"
+
 
 function App() {
 
          
   return (
-    <>
+    <Router>
       <Header/>
       <Switch>
       
@@ -27,12 +28,12 @@ function App() {
         <Route exact path="/rooms/" component={Rooms} />
         <Route exact path="/confermation/" component={ReservationConfermation} />
         <Route exact path="/book/:slug" component={BookRoom}/>
-        <Route exact path="/:slug" component={ RoomDetail} />
+        <Route exact path="/rooms/:slug" component={ RoomDetail} />
         <Route component={Error} />
                
       </Switch>
       <Footer/>
-    </>
+    </Router>
   );
 }
 

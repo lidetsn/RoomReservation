@@ -6,7 +6,7 @@ import {Container,Navbar,Nav,Row,Col} from "react-bootstrap"
 
 const Footer = () => {
     return (
-        <Navbar bg="light"  variant="dark" expand="lg" collapseOnSelect>
+        <Navbar bg="dark"  variant="dark" expand="lg" collapseOnSelect>
         <Container>
            <LinkContainer to="/">
               <Navbar.Brand>ADDIS RESORT</Navbar.Brand>
